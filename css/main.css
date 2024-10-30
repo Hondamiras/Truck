@@ -1,0 +1,71 @@
+/* In styles.css or main.css */
+
+@font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/path-to-your-fonts-folder/pt-sans-v17-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 600;
+    src: url('/path-to-your-fonts-folder/exo-2-v21-latin-600.woff2') format('woff2');
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 1245px;
+    margin: 0 auto;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    
+}
+
+.video-container img {
+    width: 100%;
+    height: auto;
+    
+    display: block;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.play-button:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.play-button::before {
+    content: '';
+    display: inline-block;
+    margin-left: 5px;
+    border-style: solid;
+    border-width: 10px 0 10px 15px;
+    border-color: transparent transparent transparent #000;
+}
+
+

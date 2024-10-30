@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Truck App</title>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="bg-white px-6 md:px-[100px] mt-[109px]">
+        <div class="container mx-auto flex flex-col lg:flex-row items-center space-y-8 lg:space-y-0 lg:space-x-10 mb-[67px]">
+            
+            <div class="text-center lg:text-left">
+                <h1 class="text-[32px] md:text-[52px] font-semibold leading-[40px] md:leading-[65px] text-[#363738] mb-[20px] md:mb-[40px] ">
+                    Поставщик Дальнего Востока
+                </h1>
+                <p class="text-[#6B6B6C] mb-6 md:mb-[40px] text-[14px] md:text-[16px] leading-[22px] md:leading-[24px]">
+                    Наши клиенты получают полный спектр услуг по работе с Китаем.<br> Начиная с подбора производителей заканчивая доставкой товара до двери.
+                    Настолько прозрачных сделок с Китаем вы еще не осуществляли.
+                </p>
+                <a href="#" class="text-[#363738] text-[14px] md:text-[16px] leading-[24px] font-bold inline-block border-b-2 border-[#FFCE50]">
+                    Узнать больше
+                </a>
+            </div>
+    
+            <div class="w-full lg:w-auto relative group">
+                <img src="images/truck.png" alt="Trucks on road" class="rounded-[20px] max-w-full max-h-[505px] object-cover">
+                <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity rounded-[20px]"></div>
+            </div>
+        </div>
+    
+        <div class="container mx-auto mt-6 md:mt-12 bg-white p-6 rounded-[20px] shadow-md">
+            <ul class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+                
+                <li class="text-center xl:border-r xl:border-[#E9E9EC] last:border-r-0">
+                    <div class="relative w-[72px] md:w-[92px] h-[72px] md:h-[92px] mx-auto md:ml-[80px] mt-[20px] md:mt-[40px] mb-[24px] flex items-center justify-center rounded-full bg-[#E9E9EC] text-[#363738] group">
+                        <img src="images/zavod.svg" alt="">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity rounded-full"></div>
+                    </div>
+                    <h3 class="text-[16px] md:text-[20px] font-semibold leading-[27px] text-[#363738] mb-2 max-w-[228px] mx-auto text-left">
+                        Поиск производителей по товару
+                    </h3>
+                    <p class="text-[#6B6B6C] max-w-[225px] text-left mx-auto md:ml-[80px] mb-[32px] md:mb-[56px]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut.
+                    </p>
+                </li>
+    
+                <li class="text-center xl:border-r xl:border-[#E9E9EC] last:border-r-0">
+                    <div class="relative w-[72px] md:w-[92px] h-[72px] md:h-[92px] mx-auto md:ml-[80px] mt-[20px] md:mt-[40px] mb-[24px] flex items-center justify-center rounded-full bg-[#E9E9EC] text-[#363738] group">
+                        <img src="images/machine.svg" alt="">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity rounded-full"></div>
+                    </div>
+                    <h3 class="text-[16px] md:text-[20px] font-semibold leading-[27px] text-[#363738] mb-2 max-w-[228px] mx-auto text-left">
+                        Поиск конкретного производителя
+                    </h3>
+                    <p class="text-[#6B6B6C] max-w-[225px] text-left mx-auto md:ml-[80px] mb-[32px] md:mb-[56px]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut.
+                    </p>
+                </li>
+    
+                <li class="text-left">
+                    <div class="relative w-[72px] md:w-[92px] h-[72px] md:h-[92px] mx-auto md:ml-[80px] mt-[20px] md:mt-[40px] mb-[24px] flex items-center justify-center rounded-full bg-[#E9E9EC] text-[#363738] group">
+                        <img src="images/delivery-box.svg" alt="">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity rounded-full"></div>
+                    </div>
+                    <h3 class="text-[16px] md:text-[20px] font-semibold leading-[27px] text-[#363738] mb-2 max-w-[228px] mx-auto text-left">
+                        Доставка образцов товаров
+                    </h3>
+                    <p class="text-[#6B6B6C] max-w-[225px] text-left mx-auto md:ml-[80px] mb-[32px] md:mb-[56px]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut.
+                    </p>
+                </li>
+            </ul>
+        </div>
+        
+    </section>
+    
+
+    
+
+    <!-- Why Section -->
+    <section class="bg-white mt-[67px]">
+        <div class="container mx-auto">
+            <div class="relative flex items-center justify-center h-[453.5px] md:h-[400px] lg:h-[450px]">
+                <img src="images/kamaz.png" alt="Truck and Ship" class="w-full h-full object-cover">
+                <div class="absolute top-0 left-0 h-full bg-[#0B7572] w-[50%] flex items-center">
+                    <h1 class="text-[#fff] ml-[90px] text-[48px] font-semibold leading-[60px] text-left">Почему с нами выгоднее?</h1>
+                </div>
+            </div>
+    
+            <div class="container mx-auto mt-[72.5px] ml-[66px]">
+                
+                <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-[62px]">
+                
+                    <div class="flex items-center space-x-[40px]">
+                        <div class="w-20 h-20 flex items-center justify-center rounded-full bg-[#E9E9EC]">
+                            <img src="images/lock.svg" alt="Lock Icon" class="w-[44px] h-auto text-[#363738]">
+                        </div>
+                        <div>
+                            <h3 class="text-[20px] font-semibold leading-[27px] text-left text-[#363738] mb-2">
+                                Lorem ipsum dolor sit amet
+                            </h3>
+                            <p class="text-[#6B6B6C] max-w-[291px] text-[16px] font-normal leading-[24px] text-left">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ut.
+                            </p>
+                        </div>
+                    </div>
+    
+                    
+                    <div class="flex items-center space-x-[40px]">
+                        <div class="w-20 h-20 flex items-center justify-center rounded-full bg-[#E9E9EC]">
+                            <img src="images/list.svg" alt="Checklist Icon" class="w-[39px] h-auto text-[#363738]">
+                        </div>
+                        <div>
+                            <h3 class="text-[20px] font-semibold leading-[27px] text-left text-[#363738] mb-2">
+                                Lorem ipsum dolor sit amet
+                            </h3>
+                            <p class="text-[#6B6B6C] max-w-[291px] text-[16px] font-normal leading-[24px] text-left">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ut.
+                            </p>
+                        </div>
+                    </div>
+    
+                    
+                    <div class="flex items-center space-x-[40px]">
+                        <div class="w-20 h-20 flex items-center justify-center rounded-full bg-[#E9E9EC]">
+                            <img src="images/dollor.svg" alt="Dollar Icon" class="w-[44px] h-[44px] text-[#363738]">
+                        </div>
+                        <div>
+                            <h3 class="text-[20px] font-semibold leading-[27px] text-left text-[#363738] mb-2">
+                                Lorem ipsum dolor sit amet
+                            </h3>
+                            <p class="text-[#6B6B6C] max-w-[291px] text-[16px] font-normal leading-[24px] text-left">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ut.
+                            </p>
+                        </div>
+                    </div>
+    
+                    
+                    <div class="flex items-center space-x-[40px]">
+                        <div class="w-20 h-20 flex items-center justify-center rounded-full bg-[#E9E9EC]">
+                            <img src="images/world.svg" alt="Globe Icon" class="w-[44px] h-auto text-[#363738]">
+                        </div>
+                        <div>
+                            <h3 class="text-[20px] font-semibold leading-[27px] text-left text-[#363738] mb-2">
+                                Lorem ipsum dolor sit amet
+                            </h3>
+                            <p class="text-[#6B6B6C] max-w-[291px] text-[16px] font-normal leading-[24px] text-left">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ut.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+    <!-- How we work -->
+    <section class="mt-[120px] mb-[80px] hidden sm:block">
+        <div class="container mx-auto">
+            <div class="mb-[56px]">
+                <h1 class="text-[48px] font-semibold leading-[60px] text-left text-[#363738] mb-[32px]">
+                    Выполненные работы
+                </h1>
+                <p class="text-[16px] font-normal leading-[24px] text-left text-[#6B6B6C]">
+                    Мы собрали информацию по грузам, которые мы уже доставили. <br>
+                    У нас специальный подход к каждому виду товаров.
+                </p>
+            </div>
+    
+            <div class="flex flex-wrap gap-6 justify-center">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col w-full sm:w-[48%] md:w-[31%]">
+                    <img src="images/1.png" alt="Станки и оборудование" class="w-full h-56 object-cover">
+                    <div class="p-4 ml-[32px] mt-[24px] mb-[32px]">
+                        <h2 class="text-[20px] font-semibold leading-[27px] text-left text-[#363738] mb-2">
+                            Станки и оборудование
+                        </h2>
+                        <p class="text-[16px] font-normal leading-[24px] text-left text-[#6B6B6C]">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ut.
+                        </p>
+                        <p class="text-[16px] font-semibold leading-[21.6px] text-left text-[#363738] pb-[5px] mt-[32px] relative">
+                            <strong>20 000 руб.</strong>
+                            <span class="absolute bottom-0 left-0 w-[86px] h-[3px] bg-[#FFCE50]"></span>
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col w-full sm:w-[48%] md:w-[31%]">
+                    <img src="images/2.png" alt="Компоненты и запчасти" class="w-full h-56 object-cover">
+                    <div class="p-4 ml-[32px] mt-[24px] mb-[32px]">
+                        <h2 class="text-[20px] font-semibold leading-[27px] text-left text-[#363738] mb-2">
+                            Компоненты и запчасти
+                        </h2>
+                        <p class="text-[16px] font-normal leading-[24px] text-left text-[#6B6B6C]">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ut.
+                        </p>
+                        <p class="text-[16px] font-semibold leading-[21.6px] text-left text-[#363738] pb-[5px] mt-[32px] relative">
+                            <strong>18 000 руб.</strong>
+                            <span class="absolute bottom-0 left-0 w-[86px] h-[3px] bg-[#FFCE50]"></span>
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col w-full sm:w-[48%] md:w-[31%]">
+                    <img src="images/3.png" alt="Станки и оборудование" class="w-full h-56 object-cover">
+                    <div class="p-4 ml-[32px] mt-[24px] mb-[32px]">
+                        <h2 class="text-[20px] font-semibold leading-[27px] text-left text-[#363738] mb-2">
+                            Станки и оборудование
+                        </h2>
+                        <p class="text-[16px] font-normal leading-[24px] text-left text-[#6B6B6C]">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ut.
+                        </p>
+                        <p class="text-[16px] font-semibold leading-[21.6px] text-left text-[#363738] pb-[5px] mt-[32px] relative">
+                            <strong>20 000 руб.</strong>
+                            <span class="absolute bottom-0 left-0 w-[86px] h-[3px] bg-[#FFCE50]"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+    
+    
+    <!-- How we deliver -->
+    <section class="py-12 hidden sm:block">
+        <div class="container mx-auto">
+            <div class="mb-8">
+                <h1 class="text-[32px] md:text-[48px] font-semibold leading-[40px] md:leading-[60px] text-left text-[#363738]">
+                    Этапы доставки
+                </h1>
+                <p class="text-[14px] md:text-[16px] font-normal leading-[20px] md:leading-[24px] text-left text-[#6B6B6C]">
+                    Мы собрали информацию по этапам, которые необходимо пройти для успешной доставки.
+                </p>
+            </div>
+    
+            <div class="grid grid-cols-1 gap-[24px]">
+                <div class="bg-white rounded-lg shadow-md p-6 flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-[56px] max-w-full md:max-w-[1182px] mx-auto">
+                    <img src="images/negotiation.png" alt="Предложение от продавца" class="w-full md:w-[331px] h-auto md:h-[181px] object-cover rounded-lg mx-auto md:ml-[96px] hidden sm:block">
+                    <div class="text-center md:text-left">
+                        <h2 class="text-[20px] font-semibold leading-[27px] text-[#363738] mb-2 relative pb-[24px]">
+                            Предложение от продавца
+                            <div class="absolute bottom-0 left-0 h-[3px] w-[86px] bg-[#FFCE50] mt-1"></div>
+                        </h2>
+                        <p class="text-[14px] md:text-[16px] font-normal leading-[20px] md:leading-[24px] text-[#6B6B6C] mt-[24px] max-w-full md:max-w-[568px] mx-auto md:mr-[132px]">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="bg-white rounded-lg shadow-md p-6 flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-[56px] max-w-full md:max-w-[1182px] mx-auto">
+                    <img src="images/shipping.png" alt="Доставка" class="w-full md:w-[331px] h-auto md:h-[181px] object-cover rounded-lg mx-auto md:ml-[96px] hidden sm:block">
+                    <div class="text-center md:text-left">
+                        <h2 class="text-[20px] font-semibold leading-[27px] text-[#363738] mb-2 relative pb-[24px]">
+                            Доставка
+                            <div class="absolute bottom-0 left-0 h-[3px] w-[86px] bg-[#FFCE50] mt-1"></div>
+                        </h2>
+                        <p class="text-[14px] md:text-[16px] font-normal leading-[20px] md:leading-[24px] text-[#6B6B6C] mt-[24px] max-w-full md:max-w-[568px] mx-auto md:mr-[132px]">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="bg-white rounded-lg shadow-md p-6 flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-[56px] max-w-full md:max-w-[1182px] mx-auto">
+                    <img src="images/instalation.png" alt="Установка у клиента" class="w-full md:w-[331px] h-auto md:h-[181px] object-cover rounded-lg mx-auto md:ml-[96px] hidden sm:block">
+                    <div class="text-center md:text-left">
+                        <h2 class="text-[20px] font-semibold leading-[27px] text-[#363738] mb-2 relative pb-[24px]">
+                            Установка у клиента
+                            <div class="absolute bottom-0 left-0 h-[3px] w-[86px] bg-[#FFCE50] mt-1"></div>
+                        </h2>
+                        <p class="text-[14px] md:text-[16px] font-normal leading-[20px] md:leading-[24px] text-[#6B6B6C] mt-[24px] max-w-full md:max-w-[568px] mx-auto md:mr-[132px]">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+    
+    <section class="mb-[166px] mt-[62px]">
+        <div class="video-container">
+            <video id="video" src="videos/truck.mp4" controls muted autoplay loop playsinline style="display: none;"></video>
+            <img src="path-to-your-thumbnail.jpg" alt="Video Thumbnail" id="thumbnail" class="w-full h-auto rounded-lg">
+            <div class="play-button" id="playButton"></div>
+        </div>
+    </section>
+
+
+    <footer class="bg-[#008080] text-white py-[80px] pl-[95px] pb-[30px]">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <div class="flex flex-col">
+                <h1 class="text-[60px] font-medium leading-[90px] tracking-[0.16em] text-left text-[#FFFFFF]">LOGO</h1>
+            </div>
+    
+            
+            <div class="grid grid-cols-2 gap-[97px]">
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:underline font-medium text-left text-[#FFFFFF]">Каталог</a></li>
+                    <li><a href="#" class="hover:underline">О Компании</a></li>
+                    <li><a href="#" class="hover:underline">Индивидуальная</a></li>
+                    <li><a href="#" class="hover:underline">Партнерам</a></li>
+                </ul>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:underline">2D, 3D Модели</a></li>
+                    <li><a href="#" class="hover:underline">Шоу-Румы</a></li>
+                    <li><a href="#" class="hover:underline">Дилерам</a></li>
+                    <li><a href="#" class="hover:underline">Контакты</a></li>
+                    <li><a href="#" class="hover:underline">Конфигуратор</a></li>
+                </ul>
+            </div>
+    
+            <div class="flex flex-col space-y-4 items-start">
+                <div class="flex space-x-4">
+                    <a href="#" target="_blank"><img src="images/instagram.svg" alt="Instagram" class="w-[27.57px] h-auto hover:opacity-50"></a>
+                    <a href="#" target="_blank"><img src="images/facebook.svg" alt="Facebook" class="w-[27.57px] h-auto hover:opacity-50"></a>
+                </div>
+                <p class="text-sm">+38 (099)-638-45-37</p>
+                <a href="#" class="bg-[#FF9619] text-[#FFFFFF] font-semibold px-4 py-2 flex items-center">
+                    ПЕРСОНАЛЬНАЯ КОНСУЛЬТАЦИЯ <span class="ml-2">→</span>
+                </a>
+            </div>            
+        </div>
+    
+        <div class="container mx-auto text-center text-sm mt-8 pt-[80px]">
+            <p>© 1993–2021 Интернет-Магазин «LOGO» – Truck</p>
+        </div>
+    </footer>
+    
+    
+    <script>
+        const playButton = document.getElementById('playButton');
+        const video = document.getElementById('video');
+        const thumbnail = document.getElementById('thumbnail');
+    
+        video.play().then(() => {
+            video.style.display = 'block';
+            thumbnail.style.display = 'none';
+            playButton.style.display = 'none';
+        }).catch(error => {
+            console.error('Autoplay failed:', error);
+        });
+    
+        playButton.addEventListener('click', () => {
+            thumbnail.style.display = 'none';
+            playButton.style.display = 'none';
+            video.style.display = 'block';
+            video.play();
+        });
+    </script>
+    
+    
+</body>
+</html>
